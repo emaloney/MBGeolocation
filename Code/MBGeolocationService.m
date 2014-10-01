@@ -151,7 +151,7 @@ MBImplementSingleton();
     [_locationManager stopUpdatingLocation];
     
     if (!_lastLocation) {
-        [MBEvents postEvent:kMBGeolocationLatestLocationVariable fromSender:self];
+        [MBEvents postEvent:kMBGeolocationUpdateTimeoutEvent fromSender:self];
     } else {
         [self locationUpdated:_lastLocation];
     }
