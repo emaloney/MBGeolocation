@@ -14,7 +14,8 @@
 /******************************************************************************/
 
 /*!
- Provides a mechanism for calculating distances .
+ Provides a mechanism for parsing geolocations from strings, calculating
+ distances between geolocations, and formatting human-readable distances.
  */
 @interface MBMLGeolocationFunctions : NSObject
 
