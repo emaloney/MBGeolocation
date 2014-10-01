@@ -14,28 +14,11 @@
 #define DEBUG_LOCAL     0
 
 /******************************************************************************/
-#pragma mark Static variables
-/******************************************************************************/
-
-static NSArray* s_acceptedLocationParameterClasses = nil;
-
-/******************************************************************************/
 #pragma mark -
 #pragma mark MBMLGeolocationFunctions implementation
 /******************************************************************************/
 
 @implementation MBMLGeolocationFunctions
-
-/******************************************************************************/
-#pragma mark Class initializer
-/******************************************************************************/
-
-+ (void) initialize
-{
-    if (!s_acceptedLocationParameterClasses) {
-        s_acceptedLocationParameterClasses = @[[NSString class], [MBGeolocation class]];
-    }
-}
 
 /******************************************************************************/
 #pragma mark Private methods
@@ -74,14 +57,18 @@ static NSArray* s_acceptedLocationParameterClasses = nil;
                                        atIndex:(NSUInteger)indexOfPointA
                                          error:(MBMLFunctionError**)errPtr
 {
+    NSArray* acceptedParameterClasses = @[[NSString class], [MBGeolocation class]];
+
+    
     MBMLFunctionError* err = nil;
     Class classOfPointA = [MBMLFunction validateParameter:array 
                                             objectAtIndex:indexOfPointA
-                                         isOneKindOfClass:s_acceptedLocationParameterClasses
+                                         isOneKindOfClass:acceptedParameterClasses
                                                     error:&err];
+    
     Class classOfPointB = [MBMLFunction validateParameter:array 
                                             objectAtIndex:indexOfPointA+1
-                                         isOneKindOfClass:s_acceptedLocationParameterClasses
+                                         isOneKindOfClass:acceptedParameterClasses
                                                     error:&err];
     if (err) {
         [err reportErrorTo:errPtr];
