@@ -10,7 +10,7 @@
 Pod::Spec.new do |s|
 
 	s.name                  = "MBGeolocation"
-	s.version               = "0.9.0"
+	s.version               = "0.9.1"
 	s.summary               = "Mockingbird Geolocation Extensions"
 	s.description			= "Provides a geolocation service that simplifies the use of CoreLocation."
 	s.homepage         	    = "https://github.com/gilt/MBGeolocation"
@@ -28,12 +28,12 @@ Pod::Spec.new do |s|
 	s.source_files			= 'Code/**/*.{h,m}'
 	s.public_header_files	= 'Code/**/*.h'
 
-#	s.xcconfig				= { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
+	s.resource_bundle		= { 'MBGeolocation' => 'Resources/*.xml' }
 
 	#----------------------------------------------------------------
 	# Dependencies
 	#----------------------------------------------------------------
 
-	s.dependency 'MBDataEnvironment', '~> 0.9.2'	
+	s.dependency 'MBDataEnvironment', '~> 0.9.4'	
 
 end
