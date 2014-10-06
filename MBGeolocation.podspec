@@ -10,10 +10,10 @@
 Pod::Spec.new do |s|
 
 	s.name                  = "MBGeolocation"
-	s.version               = "0.9.2"
+	s.version               = "0.9.3"
 	s.summary               = "Mockingbird Geolocation Extensions"
-	s.description			= "Provides a geolocation service that simplifies the use of CoreLocation."
-	s.homepage         	    = "https://github.com/gilt/MBGeolocation"
+	s.description		= "Provides a geolocation service that simplifies the use of CoreLocation."
+	s.homepage		= "https://github.com/gilt/MBGeolocation"
 	s.license               = { :type => 'MIT', :file => 'LICENSE' }
 	s.author                = { "Evan Coyne Maloney" => "emaloney@gilt.com" }
 	s.platform              = :ios, '8.0'
@@ -25,15 +25,15 @@ Pod::Spec.new do |s|
 		:tag => s.version.to_s
 	}
 
-	s.source_files			= 'Code/**/*.{h,m}'
+	s.source_files		= 'Code/**/*.{h,m}'
 	s.public_header_files	= 'Code/**/*.h'
 
-	s.resource_bundle		= { 'MBGeolocation' => 'Resources/*.xml' }
+	s.resource_bundle	= { 'MBGeolocation' => 'Resources/*.xml' }
 
 	#----------------------------------------------------------------
 	# Dependencies
 	#----------------------------------------------------------------
 
-	s.dependency 'MBDataEnvironment', '~> 0.9.4'	
+	s.dependency 'MBDataEnvironment', '~> 0.9.7'
 
 end

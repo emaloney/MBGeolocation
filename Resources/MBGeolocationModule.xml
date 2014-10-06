@@ -1,0 +1,11 @@
+<MBML>
+
+    <!-- ===================== -->
+    <!-- Function declarations -->
+    <!-- ===================== -->
+    
+    <Function class="MBMLGeolocationFunctions" name="distance" input="pipedObjects"/>
+    <Function class="MBMLGeolocationFunctions" name="formatDistance" input="pipedObjects"/>
+    <Function class="MBMLGeolocationFunctions" name="parseLocation" input="string"/>
+
+</MBML>

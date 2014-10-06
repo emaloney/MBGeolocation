@@ -16,4 +16,10 @@
 /******************************************************************************/
 
 @implementation MBGeolocationModule
+
++ (NSString*) moduleEnvironmentFilename
+{
+    return [[self description] stringByAppendingPathExtension:@"xml"];
+}
+
 @end

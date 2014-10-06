@@ -15,6 +15,7 @@
 			<key>children</key>
 			<array>
 				<string>3BFA318B19DB47AC00FF1DE4</string>
+				<string>3BBE05E119E3352F007C92A2</string>
 				<string>3BA8762C19DB322000B994D5</string>
 				<string>7667DD9238F6C6CBCE34D1C7</string>
 				<string>EEE2A177A57BE9AE3A22CDB1</string>
@@ -367,6 +368,30 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
+		</dict>
+		<key>3BBE05E119E3352F007C92A2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BBE05E219E3352F007C92A2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BBE05E219E3352F007C92A2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>MBGeolocationModule.xml</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3BFA318B19DB47AC00FF1DE4</key>
 		<dict>
