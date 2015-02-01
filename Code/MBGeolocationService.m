@@ -110,7 +110,7 @@ MBImplementSingleton();
     MBVariableSpace* vars = [MBVariableSpace instance];
     [vars unsetVariable:kMBGeolocationIsDisabledVariable];
 
-    NSTimeInterval maxAgeSec = [[vars variableForName:kMBGeolocationMaxAgeVariable] doubleValue];
+    NSTimeInterval maxAgeSec = [vars[kMBGeolocationMaxAgeVariable] doubleValue];
     if (maxAgeSec > 0 && _lastLocation) {
         if (([_lastLocation.timestamp timeIntervalSinceNow] * -1) < maxAgeSec) {
             [MBEvents postEvent:kMBGeolocationUpdatedEvent fromSender:self];
@@ -138,8 +138,8 @@ MBImplementSingleton();
     debugTrace();
     
     MBVariableSpace* vars = [MBVariableSpace instance];
-    [vars setVariable:kMBGeolocationLatestLocationVariable value:[MBGeolocation locationWithCoordinate:location.coordinate]];
-    [vars setVariable:kMBGeolocationUpdateTimeVariable value:[NSDate date]];
+    vars[kMBGeolocationLatestLocationVariable] = [MBGeolocation locationWithCoordinate:location.coordinate];
+    vars[kMBGeolocationUpdateTimeVariable] = [NSDate date];
     [MBEvents postEvent:kMBGeolocationUpdatedEvent fromSender:self];
 }
 
@@ -170,7 +170,7 @@ MBImplementSingleton();
             return;     // deliberate, so as not to turn off updates or timeout
             
         case kCLErrorDenied:
-            [[MBVariableSpace instance] setVariable:kMBGeolocationIsDisabledVariable value:@YES];
+            [MBVariableSpace instance][kMBGeolocationIsDisabledVariable] = @YES;
             [MBEvents postEvent:kMBGeolocationUpdateDeniedEvent fromSender:self];
             break;
             
