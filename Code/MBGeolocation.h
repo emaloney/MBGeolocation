@@ -1,36 +1,24 @@
 //
 //  MBGeolocation.h
-//  Mockingbird Geolocation
+//  MBGeolocation
 //
-//  Created by Jesse Boyes on 7/13/09.
-//  Copyright (c) 2009 Gilt Groupe. All rights reserved.
+//  Created by Evan Maloney on 2/4/15.
+//  Copyright (c) 2015 Gilt Groupe. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CLLocation.h>
-#import <MBDataEnvironment/MBVariableDeclaration.h>
+#import <UIKit/UIKit.h>
 
-/******************************************************************************/
-#pragma mark -
-#pragma mark MBGeolocation class
-/******************************************************************************/
+//! Project version number for MBGeolocation.
+FOUNDATION_EXPORT double MBGeolocationVersionNumber;
 
-@interface MBGeolocation : NSObject < NSCopying, MBStringValueCoding >
+//! Project version string for MBGeolocation.
+FOUNDATION_EXPORT const unsigned char MBGeolocationVersionString[];
 
-@property(nonatomic, assign) CLLocationCoordinate2D coordinate;
-@property(nonatomic, assign) CLLocationDegrees latitude;
-@property(nonatomic, assign) CLLocationDegrees longitude;
-@property(nonatomic, readonly) NSString* stringValue;
+// import headers from inherited modules
+#import <MBDataEnvironment/MBDataEnvironment.h>
 
-+ (id) fromStringValue:(NSString*)str;
-
-+ (MBGeolocation*) locationWithLatitude:(id)lat longitude:(id)lng;
-+ (MBGeolocation*) locationWithCoordinate:(CLLocationCoordinate2D)coord;
-+ (MBGeolocation*) locationWithString:(NSString*)location;
-
-- (id) initWithCoordinate:(CLLocationCoordinate2D)coord;
-- (id) initWithString:(NSString*)location;
-
-- (double) distanceFrom:(MBGeolocation*)otherLocation;
-
-@end
+// import the public headers
+#import <MBGeolocation/MBGeolocationPoint.h>
+#import <MBGeolocation/MBGeolocationService.h>
+#import <MBGeolocation/MBMLGeolocationFunctions.h>
+#import <MBGeolocation/MBGeolocationModule.h>

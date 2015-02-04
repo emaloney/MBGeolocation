@@ -9,7 +9,7 @@
 #import <MBDataEnvironment/MBDataEnvironment.h>
 
 #import "MBGeolocationService.h"
-#import "MBGeolocation.h"
+#import "MBGeolocationPoint.h"
 
 #define DEBUG_LOCAL                 0
 
@@ -138,7 +138,7 @@ MBImplementSingleton();
     debugTrace();
     
     MBVariableSpace* vars = [MBVariableSpace instance];
-    vars[kMBGeolocationLatestLocationVariable] = [MBGeolocation locationWithCoordinate:location.coordinate];
+    vars[kMBGeolocationLatestLocationVariable] = [MBGeolocationPoint pointWithCoordinate:location.coordinate];
     vars[kMBGeolocationUpdateTimeVariable] = [NSDate date];
     [MBEvents postEvent:kMBGeolocationUpdatedEvent fromSender:self];
 }

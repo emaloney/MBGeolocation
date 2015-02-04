@@ -1,5 +1,5 @@
 //
-//  MBGeolocation.m
+//  MBGeolocationPoint.m
 //  Mockingbird Geolocation
 //
 //  Created by Jesse Boyes on 7/13/09.
@@ -9,46 +9,41 @@
 #import <math.h>
 #import <MBToolbox/MBDebug.h>
 
-#import "MBGeolocation.h"
+#import "MBGeolocationPoint.h"
 
 #define DEBUG_LOCAL         0
 
 /******************************************************************************/
 #pragma mark -
-#pragma mark MBGeolocation implementation
+#pragma mark MBGeolocationPoint implementation
 /******************************************************************************/
 
-@implementation MBGeolocation
+@implementation MBGeolocationPoint
 
 /******************************************************************************/
 #pragma mark Object lifecycle
 /******************************************************************************/
 
-+ (MBGeolocation*) locationWithLatitude:(id)lat longitude:(id)lng 
++ (MBGeolocationPoint*) pointWithLatitude:(id)lat longitude:(id)lng 
 {
     debugTrace();
 
-    MBGeolocation* l = [MBGeolocation new];
+    MBGeolocationPoint* l = [MBGeolocationPoint new];
     l.latitude = (CLLocationDegrees)[lat doubleValue];
     l.longitude = (CLLocationDegrees)[lng doubleValue];
     return l;
 }
 
-+ (MBGeolocation*) locationWithCoordinate:(CLLocationCoordinate2D)coord 
++ (MBGeolocationPoint*) pointWithCoordinate:(CLLocationCoordinate2D)coord 
 {
     debugTrace();
 
-    return [[MBGeolocation alloc] initWithCoordinate:coord];
+    return [[MBGeolocationPoint alloc] initWithCoordinate:coord];
 }
 
-+ (MBGeolocation*) locationWithString:(NSString*)location
++ (MBGeolocationPoint*) pointWithString:(NSString*)location
 {
     return [[self alloc] initWithString:location];
-}
-
-+ (id) fromStringValue:(NSString*)str
-{
-    return [self locationWithString:str];
 }
 
 - (id) initWithCoordinate:(CLLocationCoordinate2D)coord 
@@ -82,7 +77,7 @@
 
 - (id) copyWithZone:(NSZone*)zone
 {
-    MBGeolocation* copy = [[[self class] allocWithZone:zone] init];
+    MBGeolocationPoint* copy = [[[self class] allocWithZone:zone] init];
     if (copy) {
         copy->_coordinate.latitude = _coordinate.latitude;
         copy->_coordinate.longitude = _coordinate.longitude;
@@ -105,7 +100,7 @@
         return NO;
     }
     
-    MBGeolocation* test = testObj;
+    MBGeolocationPoint* test = testObj;
     return ((test.coordinate.latitude == _coordinate.latitude) && (test.coordinate.longitude == _coordinate.longitude));
 }
 
@@ -120,7 +115,7 @@
 #pragma mark Accessing location data
 /******************************************************************************/
 
-- (double) distanceFrom:(MBGeolocation*)otherLocation 
+- (double) distanceFrom:(MBGeolocationPoint*)otherLocation 
 {
     debugTrace();
 
@@ -164,14 +159,14 @@
     _coordinate.longitude = lng;
 }
 
-- (NSString*) stringValue 
+- (NSString*) asString
 {
     return [NSString stringWithFormat:@"%0.8f,%0.8f", _coordinate.latitude, _coordinate.longitude];
 }
 
 - (NSString*) description
 {
-    return [NSString stringWithFormat:@"<%@: %@>", [self class], [self stringValue]];
+    return [NSString stringWithFormat:@"<%@: %@>", [self class], [self asString]];
 }
 
 @end

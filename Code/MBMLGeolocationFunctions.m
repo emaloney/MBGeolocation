@@ -9,7 +9,7 @@
 #import <MBDataEnvironment/MBDataEnvironment.h>
 
 #import "MBMLGeolocationFunctions.h"
-#import "MBGeolocation.h"
+#import "MBGeolocationPoint.h"
 
 #define DEBUG_LOCAL     0
 
@@ -57,7 +57,7 @@
                                        atIndex:(NSUInteger)indexOfPointA
                                          error:(MBMLFunctionError**)errPtr
 {
-    NSArray* acceptedParameterClasses = @[[NSString class], [MBGeolocation class]];
+    NSArray* acceptedParameterClasses = @[[NSString class], [MBGeolocationPoint class]];
 
     
     MBMLFunctionError* err = nil;
@@ -77,8 +77,8 @@
 
     id paramA = array[indexOfPointA];
     id paramB = array[indexOfPointA+1];
-    MBGeolocation* pointA = nil;
-    MBGeolocation* pointB = nil;
+    MBGeolocationPoint* pointA = nil;
+    MBGeolocationPoint* pointB = nil;
     if (classOfPointA == [NSString class]) {
         CLLocationCoordinate2D clCoord;
         [self _coordinate:&clCoord fromParameter:paramA atIndex:indexOfPointA error:&err];
@@ -86,7 +86,7 @@
             [err reportErrorTo:errPtr];
             return nil;
         }
-        pointA = [MBGeolocation locationWithCoordinate:clCoord];
+        pointA = [MBGeolocationPoint pointWithCoordinate:clCoord];
     }
     // if it isn't a string it must be an MBGeolocation
     else {
@@ -100,7 +100,7 @@
             [err reportErrorTo:errPtr];
             return nil;
         }
-        pointB = [MBGeolocation locationWithCoordinate:clCoord];
+        pointB = [MBGeolocationPoint pointWithCoordinate:clCoord];
     }
     // if it isn't a string it must be an MBGeolocation
     else {
@@ -155,7 +155,7 @@
     if (![self _coordinate:&coord fromString:locStr acceptPipes:YES]) {
         return [MBMLFunctionError errorWithFormat:@"expected parameter in the format \"<latitude>,<longitude>\" or \"<latitude>|<longitude>\", but instead got: \"%@\"", locStr];
     }
-    return [MBGeolocation locationWithCoordinate:coord];
+    return [MBGeolocationPoint pointWithCoordinate:coord];
 }
 
 @end
