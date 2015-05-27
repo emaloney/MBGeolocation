@@ -66,6 +66,7 @@
         NSArray* coords = [location componentsSeparatedByString:@","];
         if (coords.count != 2) {
             errorLog(@"Could not parse string \"%@\" into an %@ instance", location, [self class]);
+            return nil;
         }
         else {
             self.latitude = [coords[0] doubleValue];

@@ -24,15 +24,15 @@
 @property(nonatomic, assign) CLLocationDegrees latitude;
 @property(nonatomic, assign) CLLocationDegrees longitude;
 
-+ (MBGeolocationPoint*) pointWithLatitude:(id)lat longitude:(id)lng;
-+ (MBGeolocationPoint*) pointWithCoordinate:(CLLocationCoordinate2D)coord;
-+ (MBGeolocationPoint*) pointWithString:(NSString*)location;
++ (nonnull instancetype) pointWithLatitude:(nonnull id)lat longitude:(nonnull id)lng;
++ (nonnull instancetype) pointWithCoordinate:(CLLocationCoordinate2D)coord;
++ (nullable instancetype) pointWithString:(nonnull NSString*)location;
 
-- (id) initWithCoordinate:(CLLocationCoordinate2D)coord;
-- (id) initWithString:(NSString*)location;
+- (nonnull instancetype) initWithCoordinate:(CLLocationCoordinate2D)coord;
+- (nullable instancetype) initWithString:(nonnull NSString*)location;
 
-- (double) distanceFrom:(MBGeolocationPoint*)otherLocation;
+- (double) distanceFrom:(nonnull MBGeolocationPoint*)otherLocation;
 
-- (NSString*) asString;
+- (nonnull NSString*) asString;
 
 @end
