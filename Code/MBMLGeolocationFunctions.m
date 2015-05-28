@@ -117,7 +117,7 @@
 
 + (id) distance:(NSArray*)params
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     MBMLFunctionError* err = nil;
     [MBMLFunction validateParameter:params countIs:2 error:&err];
@@ -131,7 +131,7 @@
 
 + (id) formatDistance:(NSArray*)params
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     MBMLFunctionError* err = nil;
     [MBMLFunction validateParameter:params countIs:3 error:&err];
@@ -149,7 +149,7 @@
 
 + (id) parseLocation:(NSString*)locStr
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     CLLocationCoordinate2D coord;
     if (![self _coordinate:&coord fromString:locStr acceptPipes:YES]) {

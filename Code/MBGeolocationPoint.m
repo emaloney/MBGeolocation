@@ -26,7 +26,7 @@
 
 + (MBGeolocationPoint*) pointWithLatitude:(id)lat longitude:(id)lng 
 {
-    debugTrace();
+    MBLogDebugTrace();
 
     MBGeolocationPoint* l = [MBGeolocationPoint new];
     l.latitude = (CLLocationDegrees)[lat doubleValue];
@@ -36,7 +36,7 @@
 
 + (MBGeolocationPoint*) pointWithCoordinate:(CLLocationCoordinate2D)coord 
 {
-    debugTrace();
+    MBLogDebugTrace();
 
     return [[MBGeolocationPoint alloc] initWithCoordinate:coord];
 }
@@ -48,7 +48,7 @@
 
 - (id) initWithCoordinate:(CLLocationCoordinate2D)coord 
 {
-    debugTrace();
+    MBLogDebugTrace();
 
     self = [super init];
     if (self) {
@@ -59,13 +59,13 @@
 
 - (id) initWithString:(NSString*)location 
 {
-    debugTrace();
+    MBLogDebugTrace();
 
     self = [super init];
     if (self) {
         NSArray* coords = [location componentsSeparatedByString:@","];
         if (coords.count != 2) {
-            errorLog(@"Could not parse string \"%@\" into an %@ instance", location, [self class]);
+            MBLogError(@"Could not parse string \"%@\" into an %@ instance", location, [self class]);
             return nil;
         }
         else {
@@ -92,7 +92,7 @@
 
 - (BOOL) isEqual:(id)testObj
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     if (testObj == self) {
         return YES;
@@ -107,7 +107,7 @@
 
 - (NSUInteger) hash
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     return ((NSUInteger)_coordinate.latitude ^ (NSUInteger)_coordinate.longitude);
 }
@@ -118,7 +118,7 @@
 
 - (double) distanceFrom:(MBGeolocationPoint*)otherLocation 
 {
-    debugTrace();
+    MBLogDebugTrace();
 
     double la1 = otherLocation.latitude * M_PI / 180.0;
     double lo1 = otherLocation.longitude * M_PI / 180.0;
@@ -134,28 +134,28 @@
 
 - (CLLocationDegrees) latitude 
 { 
-    debugTrace();
+    MBLogDebugTrace();
 
     return _coordinate.latitude; 
 }
 
 - (CLLocationDegrees) longitude 
 { 
-    debugTrace();
+    MBLogDebugTrace();
 
     return _coordinate.longitude; 
 }
 
 - (void) setLatitude:(CLLocationDegrees)lat 
 { 
-    debugTrace();
+    MBLogDebugTrace();
 
     _coordinate.latitude = lat;
 }
 
 - (void) setLongitude:(CLLocationDegrees)lng 
 { 
-    debugTrace();
+    MBLogDebugTrace();
 
     _coordinate.longitude = lng;
 }

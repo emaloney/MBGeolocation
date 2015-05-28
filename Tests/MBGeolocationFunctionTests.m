@@ -45,8 +45,6 @@
 
 - (void) setUpVariableSpace:(MBVariableSpace*)vars
 {
-    consoleTrace();
-
     [super setUpVariableSpace:vars];
 }
 

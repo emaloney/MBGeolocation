@@ -67,7 +67,7 @@ MBImplementSingleton();
 
 - (void) startService
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     if (!_locationManager) {
         _locationManager = [CLLocationManager new];
@@ -85,7 +85,7 @@ MBImplementSingleton();
 
 - (void) stopService
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     if (_locationManager) {
         [[NSNotificationCenter defaultCenter] removeObserver:self];
@@ -105,7 +105,7 @@ MBImplementSingleton();
 
 - (void) updateLocation
 {
-    debugTrace();
+    MBLogDebugTrace();
 
     MBVariableSpace* vars = [MBVariableSpace instance];
     [vars unsetVariable:kMBGeolocationIsDisabledVariable];
@@ -135,7 +135,7 @@ MBImplementSingleton();
 
 - (void) locationUpdated:(CLLocation*)location
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     MBVariableSpace* vars = [MBVariableSpace instance];
     vars[kMBGeolocationLatestLocationVariable] = [MBGeolocationPoint pointWithCoordinate:location.coordinate];
@@ -145,7 +145,7 @@ MBImplementSingleton();
 
 - (void) locationDetectionTimeout:(id)sender
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     _locationTimeout = nil;
     [_locationManager stopUpdatingLocation];
@@ -179,7 +179,7 @@ MBImplementSingleton();
             break;
     }
     
-    errorLog(@"Failed to determine location: %@", error);
+    MBLogError(@"Failed to determine location: %@", error);
 
     [_locationTimeout invalidate], _locationTimeout = nil;
     
@@ -189,7 +189,7 @@ MBImplementSingleton();
 
 - (void) locationManager:(CLLocationManager*)manager didUpdateToLocation:(CLLocation*)newLocation fromLocation:(CLLocation*)oldLocation
 {
-    debugTrace();
+    MBLogDebugTrace();
     
     _lastLocation = newLocation;
     
