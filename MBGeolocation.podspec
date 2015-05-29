@@ -10,7 +10,7 @@
 Pod::Spec.new do |s|
 
 	s.name                  = "MBGeolocation"
-	s.version               = "0.9.8"
+	s.version               = "0.10.0"
 	s.summary               = "Mockingbird Geolocation Extensions"
 	s.description		= "Provides a geolocation service that simplifies the use of CoreLocation."
 	s.homepage		= "https://github.com/emaloney/MBGeolocation"
@@ -34,6 +34,7 @@ Pod::Spec.new do |s|
 	# Dependencies
 	#----------------------------------------------------------------
 
-	s.dependency 'MBDataEnvironment', '~> 1.0.3'
+	s.dependency 'MBToolbox', '~> 1.1.0'
+	s.dependency 'MBDataEnvironment', '~> 1.1.0'
 
 end
