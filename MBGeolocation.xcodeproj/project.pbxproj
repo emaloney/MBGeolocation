@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3B79DEE31B17F6B20031D15A /* test-MBDataEnvironment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B79DEE21B17F6B20031D15A /* test-MBDataEnvironment.xml */; };
 		3BB792741A82AB3D00A99387 /* MBGeolocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB792691A82AB3D00A99387 /* MBGeolocation.framework */; };
 		3BB7928A1A82AB9500A99387 /* MBGeolocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA318F19DB47AC00FF1DE4 /* MBGeolocationService.m */; };
 		3BB7928C1A82AB9500A99387 /* MBMLGeolocationFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA319119DB47AC00FF1DE4 /* MBMLGeolocationFunctions.m */; };
@@ -34,7 +35,6 @@
 		3BB792A01A82BE4100A99387 /* MBGeolocationFunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7929F1A82BE4100A99387 /* MBGeolocationFunctionTests.m */; };
 		3BB792A11A82CB5F00A99387 /* MBGeolocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB7929C1A82BBE600A99387 /* MBGeolocation.h */; };
 		3BB792A41A82CD0300A99387 /* MBDataEnvironmentTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB792A31A82CD0300A99387 /* MBDataEnvironmentTestSuite.m */; };
-		3BB792A71A82CD0D00A99387 /* test-app-data.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BB792A61A82CD0D00A99387 /* test-app-data.xml */; };
 		94CB45FB260013DF948F9C2B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B2533C290F3A3DA8C6E323 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		161060E76882B882FCA6AFEC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3B79DEE21B17F6B20031D15A /* test-MBDataEnvironment.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "test-MBDataEnvironment.xml"; sourceTree = "<group>"; };
 		3BB792691A82AB3D00A99387 /* MBGeolocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBGeolocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB792731A82AB3D00A99387 /* MBGeolocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBGeolocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB792981A82BADB00A99387 /* MBGeolocationPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGeolocationPoint.h; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		3BB7929F1A82BE4100A99387 /* MBGeolocationFunctionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGeolocationFunctionTests.m; sourceTree = "<group>"; };
 		3BB792A21A82CD0300A99387 /* MBDataEnvironmentTestSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBDataEnvironmentTestSuite.h; path = Pods/MBDataEnvironment/Tests/MBDataEnvironmentTestSuite.h; sourceTree = SOURCE_ROOT; };
 		3BB792A31A82CD0300A99387 /* MBDataEnvironmentTestSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBDataEnvironmentTestSuite.m; path = Pods/MBDataEnvironment/Tests/MBDataEnvironmentTestSuite.m; sourceTree = SOURCE_ROOT; };
-		3BB792A61A82CD0D00A99387 /* test-app-data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "test-app-data.xml"; sourceTree = "<group>"; };
 		3BBE05E219E3352F007C92A2 /* MBGeolocationModule.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MBGeolocationModule.xml; sourceTree = "<group>"; };
 		3BFA318E19DB47AC00FF1DE4 /* MBGeolocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGeolocationService.h; sourceTree = "<group>"; };
 		3BFA318F19DB47AC00FF1DE4 /* MBGeolocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGeolocationService.m; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		3BB792A51A82CD0D00A99387 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3BB792A61A82CD0D00A99387 /* test-app-data.xml */,
+				3B79DEE21B17F6B20031D15A /* test-MBDataEnvironment.xml */,
 			);
 			name = Resources;
 			path = Pods/MBDataEnvironment/Tests/Resources;
@@ -288,7 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BB792A71A82CD0D00A99387 /* test-app-data.xml in Resources */,
+				3B79DEE31B17F6B20031D15A /* test-MBDataEnvironment.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
