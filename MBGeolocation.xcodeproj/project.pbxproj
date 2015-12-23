@@ -35,7 +35,7 @@
 		3BB792A01A82BE4100A99387 /* MBGeolocationFunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7929F1A82BE4100A99387 /* MBGeolocationFunctionTests.m */; };
 		3BB792A11A82CB5F00A99387 /* MBGeolocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB7929C1A82BBE600A99387 /* MBGeolocation.h */; };
 		3BB792A41A82CD0300A99387 /* MBDataEnvironmentTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB792A31A82CD0300A99387 /* MBDataEnvironmentTestSuite.m */; };
-		94CB45FB260013DF948F9C2B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B2533C290F3A3DA8C6E323 /* libPods.a */; };
+		82FB95FFE901F6159CF08270 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA03885E45906101578CB8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 		3BFA319119DB47AC00FF1DE4 /* MBMLGeolocationFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMLGeolocationFunctions.m; sourceTree = "<group>"; };
 		3BFA319319DB47AC00FF1DE4 /* MBGeolocationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGeolocationModule.h; sourceTree = "<group>"; };
 		3BFA319419DB47AC00FF1DE4 /* MBGeolocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGeolocationModule.m; sourceTree = "<group>"; };
-		B6B2533C290F3A3DA8C6E323 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FA03885E45906101578CB8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7F0AE3D8240EAAA224289B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CB45FB260013DF948F9C2B /* libPods.a in Frameworks */,
+				82FB95FFE901F6159CF08270 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +93,7 @@
 		3A379837F15EBF651EBC6D23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6B2533C290F3A3DA8C6E323 /* libPods.a */,
+				95FA03885E45906101578CB8 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
