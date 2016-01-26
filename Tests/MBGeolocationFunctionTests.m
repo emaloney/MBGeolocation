@@ -6,11 +6,10 @@
 //  Copyright (c) 2012 Gilt Groupe. All rights reserved.
 //
 
+@import MBDataEnvironment;
+
 #import "MBDataEnvironmentTestSuite.h"
-#import "MBVariableSpace.h"
-#import "MBExpression.h"
 #import "MBGeolocationPoint.h"
-#import "MBEnvironment.h"
 #import "MBGeolocationModule.h"
 
 #define TEST_EXPECTED_FAILURES      1
