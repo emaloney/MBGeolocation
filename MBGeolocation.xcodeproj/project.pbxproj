@@ -499,20 +499,9 @@
 		3BB792801A82AB3D00A99387 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SDKROOT)/usr/include/libxml2",
-					"$(PROJECT_DIR)/Pods/MBDataEnvironment/Tests",
-					"$(PROJECT_DIR)/Pods/Headers/Public/**",
 				);
 				INFOPLIST_FILE = "BuildControl/Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -525,17 +514,6 @@
 		3BB792811A82AB3D00A99387 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SDKROOT)/usr/include/libxml2",
-					"$(PROJECT_DIR)/Pods/MBDataEnvironment/Tests",
-					"$(PROJECT_DIR)/Pods/Headers/Public/**",
-				);
 				INFOPLIST_FILE = "BuildControl/Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
