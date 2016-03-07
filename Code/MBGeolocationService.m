@@ -48,7 +48,7 @@ const CLLocationAccuracy kMBGeolocationMinimumRadius    = 500;          // Maxim
     NSTimer* _locationTimeout;
 }
 
-MBImplementSingleton();
+MBImplementSingleton()
 
 /******************************************************************************/
 #pragma mark Object lifecycle
