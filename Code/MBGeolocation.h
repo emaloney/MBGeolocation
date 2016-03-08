@@ -6,16 +6,13 @@
 //  Copyright (c) 2015 Gilt Groupe. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for MBGeolocation.
 FOUNDATION_EXPORT double MBGeolocationVersionNumber;
 
 //! Project version string for MBGeolocation.
 FOUNDATION_EXPORT const unsigned char MBGeolocationVersionString[];
-
-// import headers from inherited modules
-#import <MBDataEnvironment/MBDataEnvironment.h>
 
 // import the public headers
 #import <MBGeolocation/MBGeolocationPoint.h>

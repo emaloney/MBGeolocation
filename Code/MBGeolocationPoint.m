@@ -6,8 +6,9 @@
 //  Copyright (c) 2009 Gilt Groupe. All rights reserved.
 //
 
+@import MBToolbox;
+
 #import <math.h>
-#import <MBToolbox/MBDebug.h>
 
 #import "MBGeolocationPoint.h"
 

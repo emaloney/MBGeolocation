@@ -6,8 +6,9 @@
 //  Copyright (c) 2011 Gilt Groupe. All rights reserved.
 //
 
-#import <CoreLocation/CoreLocation.h>
-#import <MBToolbox/MBToolbox.h>
+@import CoreLocation;
+#import <MBToolbox/MBSingleton.h>
+#import <MBToolbox/MBService.h>
 
 /******************************************************************************/
 #pragma mark Constants

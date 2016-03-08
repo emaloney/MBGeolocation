@@ -6,9 +6,8 @@
 //  Copyright (c) 2009 Gilt Groupe. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CLLocation.h>
-#import <MBDataEnvironment/MBVariableDeclaration.h>
+@import Foundation;
+@import CoreLocation;
 
 /******************************************************************************/
 #pragma mark -
