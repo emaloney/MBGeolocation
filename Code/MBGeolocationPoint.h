@@ -6,8 +6,8 @@
 //  Copyright (c) 2009 Gilt Groupe. All rights reserved.
 //
 
-@import Foundation;
-@import CoreLocation;
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 /******************************************************************************/
 #pragma mark -

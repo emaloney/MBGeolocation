@@ -6,7 +6,7 @@
 //  Copyright (c) 2011 Gilt Groupe. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 /******************************************************************************/
 #pragma mark -

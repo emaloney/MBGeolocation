@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Gilt Groupe. All rights reserved.
 //
 
-@import MBToolbox;
-
 #import "MBGeolocationModule.h"
 
 #define DEBUG_LOCAL     0
