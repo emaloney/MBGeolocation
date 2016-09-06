@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3B1FB4321D7F23B3001A099E /* MBDataEnvironment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1FB4301D7F23B3001A099E /* MBDataEnvironment.framework */; };
+		3B1FB4331D7F23B3001A099E /* MBToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1FB4311D7F23B3001A099E /* MBToolbox.framework */; };
+		3B1FB4351D7F23BB001A099E /* RaptureXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1FB4341D7F23BB001A099E /* RaptureXML.framework */; };
 		3B79DEE31B17F6B20031D15A /* test-MBDataEnvironment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B79DEE21B17F6B20031D15A /* test-MBDataEnvironment.xml */; };
 		3BB792741A82AB3D00A99387 /* MBGeolocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB792691A82AB3D00A99387 /* MBGeolocation.framework */; };
 		3BB7928A1A82AB9500A99387 /* MBGeolocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA318F19DB47AC00FF1DE4 /* MBGeolocationService.m */; };
@@ -35,7 +38,6 @@
 		3BB792A01A82BE4100A99387 /* MBGeolocationFunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7929F1A82BE4100A99387 /* MBGeolocationFunctionTests.m */; };
 		3BB792A11A82CB5F00A99387 /* MBGeolocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB7929C1A82BBE600A99387 /* MBGeolocation.h */; };
 		3BB792A41A82CD0300A99387 /* MBDataEnvironmentTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB792A31A82CD0300A99387 /* MBDataEnvironmentTestSuite.m */; };
-		82FB95FFE901F6159CF08270 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA03885E45906101578CB8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		161060E76882B882FCA6AFEC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3B1FB4301D7F23B3001A099E /* MBDataEnvironment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBDataEnvironment.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Gilt-ertfwablfdbghreppztdbsiiyqli/Build/Products/Release-iphonesimulator/MBDataEnvironment.framework"; sourceTree = "<group>"; };
+		3B1FB4311D7F23B3001A099E /* MBToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBToolbox.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Gilt-ertfwablfdbghreppztdbsiiyqli/Build/Products/Release-iphonesimulator/MBToolbox.framework"; sourceTree = "<group>"; };
+		3B1FB4341D7F23BB001A099E /* RaptureXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RaptureXML.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Gilt-ertfwablfdbghreppztdbsiiyqli/Build/Products/Release-iphonesimulator/RaptureXML.framework"; sourceTree = "<group>"; };
 		3B79DEE21B17F6B20031D15A /* test-MBDataEnvironment.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "test-MBDataEnvironment.xml"; sourceTree = "<group>"; };
 		3BB792691A82AB3D00A99387 /* MBGeolocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBGeolocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB792731A82AB3D00A99387 /* MBGeolocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBGeolocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +71,6 @@
 		3BFA319319DB47AC00FF1DE4 /* MBGeolocationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGeolocationModule.h; sourceTree = "<group>"; };
 		3BFA319419DB47AC00FF1DE4 /* MBGeolocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGeolocationModule.m; sourceTree = "<group>"; };
 		95FA03885E45906101578CB8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC7F0AE3D8240EAAA224289B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82FB95FFE901F6159CF08270 /* Pods.framework in Frameworks */,
+				3B1FB4351D7F23BB001A099E /* RaptureXML.framework in Frameworks */,
+				3B1FB4321D7F23B3001A099E /* MBDataEnvironment.framework in Frameworks */,
+				3B1FB4331D7F23B3001A099E /* MBToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +98,9 @@
 		3A379837F15EBF651EBC6D23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B1FB4341D7F23BB001A099E /* RaptureXML.framework */,
+				3B1FB4301D7F23B3001A099E /* MBDataEnvironment.framework */,
+				3B1FB4311D7F23B3001A099E /* MBToolbox.framework */,
 				95FA03885E45906101578CB8 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -105,7 +113,6 @@
 				3BBE05E119E3352F007C92A2 /* Resources */,
 				3BB7929E1A82BE4100A99387 /* Tests */,
 				3BA8762C19DB322000B994D5 /* Products */,
-				8AF4C2EC303A842856E08993 /* Pods */,
 				3A379837F15EBF651EBC6D23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -171,15 +178,6 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
-		8AF4C2EC303A842856E08993 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CC7F0AE3D8240EAAA224289B /* Pods.debug.xcconfig */,
-				161060E76882B882FCA6AFEC /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -202,12 +200,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BB7927C1A82AB3D00A99387 /* Build configuration list for PBXNativeTarget "MBGeolocation" */;
 			buildPhases = (
-				596C82CD3350D1D3F304FB95 /* Check Pods Manifest.lock */,
 				3BB792641A82AB3D00A99387 /* Sources */,
 				3BB792651A82AB3D00A99387 /* Frameworks */,
 				3BB792661A82AB3D00A99387 /* Headers */,
 				3BB792671A82AB3D00A99387 /* Resources */,
-				033AD4F77629EFB150896C96 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,7 +238,7 @@
 		3BA8762319DB322000B994D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Gilt Groupe";
 				TargetAttributes = {
 					3BB792681A82AB3D00A99387 = {
@@ -295,21 +291,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		033AD4F77629EFB150896C96 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3BB792861A82AB6D00A99387 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,21 +303,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PROJECT_DIR/Pods/MBToolbox/BuildControl/public/buildMockingbirdDocumentation.sh --module \"Geolocation Module\"";
-		};
-		596C82CD3350D1D3F304FB95 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -385,14 +351,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -405,8 +375,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -425,21 +396,24 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,10 +423,9 @@
 		};
 		3BB7927D1A82AB3D00A99387 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC7F0AE3D8240EAAA224289B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -466,6 +439,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -475,10 +449,9 @@
 		};
 		3BB7927E1A82AB3D00A99387 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 161060E76882B882FCA6AFEC /* Pods.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -488,6 +461,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -506,6 +480,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.tests.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -517,6 +492,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilt.tests.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
