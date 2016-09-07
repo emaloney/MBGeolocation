@@ -36,7 +36,7 @@
 		3BB7929A1A82BADB00A99387 /* MBGeolocationPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB792981A82BADB00A99387 /* MBGeolocationPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BB7929B1A82BADB00A99387 /* MBGeolocationPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB792991A82BADB00A99387 /* MBGeolocationPoint.m */; };
 		3BB792A01A82BE4100A99387 /* MBGeolocationFunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7929F1A82BE4100A99387 /* MBGeolocationFunctionTests.m */; };
-		3BB792A11A82CB5F00A99387 /* MBGeolocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB7929C1A82BBE600A99387 /* MBGeolocation.h */; };
+		3BB792A11A82CB5F00A99387 /* MBGeolocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB7929C1A82BBE600A99387 /* MBGeolocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BB792A41A82CD0300A99387 /* MBDataEnvironmentTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB792A31A82CD0300A99387 /* MBDataEnvironmentTestSuite.m */; };
 /* End PBXBuildFile section */
 
