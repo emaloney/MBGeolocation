@@ -7,6 +7,7 @@
 //
 
 @import MBDataEnvironment;
+@import MBGeolocation;
 
 #import "MBDataEnvironmentTestSuite.h"
 #import "MBGeolocationPoint.h"

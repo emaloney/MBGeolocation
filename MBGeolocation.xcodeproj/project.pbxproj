@@ -24,7 +24,11 @@
 		3B1FB4321D7F23B3001A099E /* MBDataEnvironment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1FB4301D7F23B3001A099E /* MBDataEnvironment.framework */; };
 		3B1FB4331D7F23B3001A099E /* MBToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1FB4311D7F23B3001A099E /* MBToolbox.framework */; };
 		3B1FB4351D7F23BB001A099E /* RaptureXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1FB4341D7F23BB001A099E /* RaptureXML.framework */; };
-		3B79DEE31B17F6B20031D15A /* test-MBDataEnvironment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B79DEE21B17F6B20031D15A /* test-MBDataEnvironment.xml */; };
+		3B21560D1D88DC1300F0156E /* MBDataEnvironmentTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B21560C1D88DC1300F0156E /* MBDataEnvironmentTestSuite.m */; };
+		3B2156101D88DC6D00F0156E /* test-MBDataEnvironment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B21560F1D88DC6D00F0156E /* test-MBDataEnvironment.xml */; };
+		3B2156141D88DD5600F0156E /* MBDataEnvironment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2156111D88DD5600F0156E /* MBDataEnvironment.framework */; };
+		3B2156151D88DD5600F0156E /* MBToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2156121D88DD5600F0156E /* MBToolbox.framework */; };
+		3B2156161D88DD5600F0156E /* RaptureXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2156131D88DD5600F0156E /* RaptureXML.framework */; };
 		3BB792741A82AB3D00A99387 /* MBGeolocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB792691A82AB3D00A99387 /* MBGeolocation.framework */; };
 		3BB7928A1A82AB9500A99387 /* MBGeolocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA318F19DB47AC00FF1DE4 /* MBGeolocationService.m */; };
 		3BB7928C1A82AB9500A99387 /* MBMLGeolocationFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA319119DB47AC00FF1DE4 /* MBMLGeolocationFunctions.m */; };
@@ -37,7 +41,6 @@
 		3BB7929B1A82BADB00A99387 /* MBGeolocationPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB792991A82BADB00A99387 /* MBGeolocationPoint.m */; };
 		3BB792A01A82BE4100A99387 /* MBGeolocationFunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7929F1A82BE4100A99387 /* MBGeolocationFunctionTests.m */; };
 		3BB792A11A82CB5F00A99387 /* MBGeolocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB7929C1A82BBE600A99387 /* MBGeolocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BB792A41A82CD0300A99387 /* MBDataEnvironmentTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB792A31A82CD0300A99387 /* MBDataEnvironmentTestSuite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,15 +57,18 @@
 		3B1FB4301D7F23B3001A099E /* MBDataEnvironment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBDataEnvironment.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Gilt-ertfwablfdbghreppztdbsiiyqli/Build/Products/Release-iphonesimulator/MBDataEnvironment.framework"; sourceTree = "<group>"; };
 		3B1FB4311D7F23B3001A099E /* MBToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBToolbox.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Gilt-ertfwablfdbghreppztdbsiiyqli/Build/Products/Release-iphonesimulator/MBToolbox.framework"; sourceTree = "<group>"; };
 		3B1FB4341D7F23BB001A099E /* RaptureXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RaptureXML.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Gilt-ertfwablfdbghreppztdbsiiyqli/Build/Products/Release-iphonesimulator/RaptureXML.framework"; sourceTree = "<group>"; };
-		3B79DEE21B17F6B20031D15A /* test-MBDataEnvironment.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "test-MBDataEnvironment.xml"; sourceTree = "<group>"; };
+		3B21560B1D88DC1300F0156E /* MBDataEnvironmentTestSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDataEnvironmentTestSuite.h; sourceTree = "<group>"; };
+		3B21560C1D88DC1300F0156E /* MBDataEnvironmentTestSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDataEnvironmentTestSuite.m; sourceTree = "<group>"; };
+		3B21560F1D88DC6D00F0156E /* test-MBDataEnvironment.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "test-MBDataEnvironment.xml"; sourceTree = "<group>"; };
+		3B2156111D88DD5600F0156E /* MBDataEnvironment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBDataEnvironment.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MBGeolocation-buqtmxbyyuddpkcvuoyzmalyfwgv/Build/Products/Debug-iphonesimulator/MBDataEnvironment.framework"; sourceTree = "<group>"; };
+		3B2156121D88DD5600F0156E /* MBToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBToolbox.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MBGeolocation-buqtmxbyyuddpkcvuoyzmalyfwgv/Build/Products/Debug-iphonesimulator/MBToolbox.framework"; sourceTree = "<group>"; };
+		3B2156131D88DD5600F0156E /* RaptureXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RaptureXML.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MBGeolocation-buqtmxbyyuddpkcvuoyzmalyfwgv/Build/Products/Debug-iphonesimulator/RaptureXML.framework"; sourceTree = "<group>"; };
 		3BB792691A82AB3D00A99387 /* MBGeolocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBGeolocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB792731A82AB3D00A99387 /* MBGeolocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBGeolocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB792981A82BADB00A99387 /* MBGeolocationPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGeolocationPoint.h; sourceTree = "<group>"; };
 		3BB792991A82BADB00A99387 /* MBGeolocationPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGeolocationPoint.m; sourceTree = "<group>"; };
 		3BB7929C1A82BBE600A99387 /* MBGeolocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGeolocation.h; sourceTree = "<group>"; };
 		3BB7929F1A82BE4100A99387 /* MBGeolocationFunctionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGeolocationFunctionTests.m; sourceTree = "<group>"; };
-		3BB792A21A82CD0300A99387 /* MBDataEnvironmentTestSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBDataEnvironmentTestSuite.h; path = Pods/MBDataEnvironment/Tests/MBDataEnvironmentTestSuite.h; sourceTree = SOURCE_ROOT; };
-		3BB792A31A82CD0300A99387 /* MBDataEnvironmentTestSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBDataEnvironmentTestSuite.m; path = Pods/MBDataEnvironment/Tests/MBDataEnvironmentTestSuite.m; sourceTree = SOURCE_ROOT; };
 		3BBE05E219E3352F007C92A2 /* MBGeolocationModule.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MBGeolocationModule.xml; sourceTree = "<group>"; };
 		3BFA318E19DB47AC00FF1DE4 /* MBGeolocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGeolocationService.h; sourceTree = "<group>"; };
 		3BFA318F19DB47AC00FF1DE4 /* MBGeolocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGeolocationService.m; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2156141D88DD5600F0156E /* MBDataEnvironment.framework in Frameworks */,
+				3B2156151D88DD5600F0156E /* MBToolbox.framework in Frameworks */,
+				3B2156161D88DD5600F0156E /* RaptureXML.framework in Frameworks */,
 				3BB792741A82AB3D00A99387 /* MBGeolocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,12 +107,23 @@
 		3A379837F15EBF651EBC6D23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B2156111D88DD5600F0156E /* MBDataEnvironment.framework */,
+				3B2156121D88DD5600F0156E /* MBToolbox.framework */,
+				3B2156131D88DD5600F0156E /* RaptureXML.framework */,
 				3B1FB4341D7F23BB001A099E /* RaptureXML.framework */,
 				3B1FB4301D7F23B3001A099E /* MBDataEnvironment.framework */,
 				3B1FB4311D7F23B3001A099E /* MBToolbox.framework */,
 				95FA03885E45906101578CB8 /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B21560E1D88DC6D00F0156E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B21560F1D88DC6D00F0156E /* test-MBDataEnvironment.xml */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		3BA8762219DB322000B994D5 = {
@@ -129,22 +149,13 @@
 		3BB7929E1A82BE4100A99387 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3BB792A51A82CD0D00A99387 /* Resources */,
-				3BB792A21A82CD0300A99387 /* MBDataEnvironmentTestSuite.h */,
-				3BB792A31A82CD0300A99387 /* MBDataEnvironmentTestSuite.m */,
+				3B21560E1D88DC6D00F0156E /* Resources */,
 				3BB7929F1A82BE4100A99387 /* MBGeolocationFunctionTests.m */,
+				3B21560B1D88DC1300F0156E /* MBDataEnvironmentTestSuite.h */,
+				3B21560C1D88DC1300F0156E /* MBDataEnvironmentTestSuite.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
-		};
-		3BB792A51A82CD0D00A99387 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3B79DEE21B17F6B20031D15A /* test-MBDataEnvironment.xml */,
-			);
-			name = Resources;
-			path = Pods/MBDataEnvironment/Tests/Resources;
-			sourceTree = SOURCE_ROOT;
 		};
 		3BBE05E119E3352F007C92A2 /* Resources */ = {
 			isa = PBXGroup;
@@ -284,7 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B79DEE31B17F6B20031D15A /* test-MBDataEnvironment.xml in Resources */,
+				3B2156101D88DC6D00F0156E /* test-MBDataEnvironment.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BB792A01A82BE4100A99387 /* MBGeolocationFunctionTests.m in Sources */,
-				3BB792A41A82CD0300A99387 /* MBDataEnvironmentTestSuite.m in Sources */,
+				3B21560D1D88DC1300F0156E /* MBDataEnvironmentTestSuite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
