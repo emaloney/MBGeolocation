@@ -37,12 +37,12 @@ Within to your project’s root directory, Carthage-based projects will store a 
 To integrate MBGeolocation in your workspace, you would start by adding the following line to the `Cartfile`:
 
 ```
-github "emaloney/MBGeolocation" ~> 0.0.0
+github "emaloney/MBGeolocation" ~> 3.0.0
 ```
 
-This specifies that Carthage use the latest version of MBGeolocation that is API-compatible with 0.0, i.e. any 0.0.*x* version.
+This specifies that Carthage use the latest version of MBGeolocation that is API-compatible with 3.0, i.e. any 3.0.*x* version.
 
-**Note:** Be sure to check the [latest releases](https://github.com/emaloney/MBGeolocation/releases); there may be a newer version than 0.0 that is no longer API-compatible.
+**Note:** Be sure to check the [latest releases](https://github.com/emaloney/MBGeolocation/releases); there may be a newer version than 3.0 that is no longer API-compatible.
 
 ### 2. Download MBGeolocation using Carthage
 

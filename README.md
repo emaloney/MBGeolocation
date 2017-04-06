@@ -36,7 +36,7 @@ The simplest way to integrate MBGeolocation is with the [Carthage](https://githu
 First, add this line to your [`Cartfile`](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
 
 ```
-github "emaloney/MBGeolocation" ~> 0.0.0
+github "emaloney/MBGeolocation" ~> 3.0.0
 ```
 
 Then, use the `carthage` command to [update your dependencies](https://github.com/Carthage/Carthage#upgrading-frameworks).
