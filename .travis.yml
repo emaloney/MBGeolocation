@@ -1,17 +1,35 @@
 language: objective-c
 xcode_workspace: MBGeolocation.xcworkspace
-osx_image: xcode8.2
+osx_image: xcode8.3
 
 git:
   depth: 1
   submodules: false
 
 before_install:
-  git submodule update --init
+  - git submodule update --init
 
 install:
-  gem install xcpretty
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
 script:
-- set -o pipefail && xcodebuild -workspace MBGeolocation.xcworkspace -scheme 'MBGeolocation' -destination 'platform=iOS Simulator,OS=10.2,name=iPad Pro (9.7 inch)' -destination-timeout 120 clean build | xcpretty
-- set -o pipefail && xcodebuild -workspace MBGeolocation.xcworkspace -scheme 'MBGeolocation' -destination 'platform=iOS Simulator,OS=10.2,name=iPad Pro (9.7 inch)' -destination-timeout 120 test | xcpretty
+  - ./BuildControl/bin/travisBuildHelper.sh build iOS
+  - ./BuildControl/bin/travisBuildHelper.sh test iOS
+  - ./BuildControl/bin/travisBuildHelper.sh build macOS
+  - ./BuildControl/bin/travisBuildHelper.sh test macOS
+  - ./BuildControl/bin/travisBuildHelper.sh build tvOS
+  - ./BuildControl/bin/travisBuildHelper.sh test tvOS
+  - ./BuildControl/bin/travisBuildHelper.sh build watchOS
+
+after_failure:
+  - test -f "MBGeolocation-iOS-build.log" && tail -n 2500 "MBGeolocation-iOS-build.log"
+  - test -f "MBGeolocation-iOS-test.log" && tail -n 2500 "MBGeolocation-iOS-test.log"
+  - test -f "MBGeolocation-iOS-test.log" && LINE_BEFORE=`cat "MBGeolocation-iOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "MBGeolocation-iOS-test.log" | tail -n 1` && cat "$LOG_FILE"
+  - test -f "MBGeolocation-macOS-build.log" && tail -n 2500 "MBGeolocation-macOS-build.log"
+  - test -f "MBGeolocation-macOS-test.log" && tail -n 2500 "MBGeolocation-macOS-test.log"
+  - test -f "MBGeolocation-macOS-test.log" && LINE_BEFORE=`cat "MBGeolocation-macOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "MBGeolocation-macOS-test.log" | tail -n 1` && cat "$LOG_FILE"
+  - test -f "MBGeolocation-tvOS-build.log" && tail -n 2500 "MBGeolocation-tvOS-build.log"
+  - test -f "MBGeolocation-tvOS-test.log" && tail -n 2500 "MBGeolocation-tvOS-test.log"
+  - test -f "MBGeolocation-tvOS-test.log" && LINE_BEFORE=`cat "MBGeolocation-tvOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "MBGeolocation-tvOS-test.log" | tail -n 1` && cat "$LOG_FILE"
+  - test -f "MBGeolocation-watchOS-build.log" && tail -n 2500 "MBGeolocation-watchOS-build.log"
+

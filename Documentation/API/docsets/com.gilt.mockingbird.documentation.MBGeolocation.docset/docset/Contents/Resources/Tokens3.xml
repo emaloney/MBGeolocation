@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MBGeolocationService.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MBGeolocationService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationService.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationService/updateLocation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationService.h</DeclaredIn>
+			
+			<Declaration>- (void)updateLocation</Declaration>
+			
+			
+			<Anchor>//api/name/updateLocation</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

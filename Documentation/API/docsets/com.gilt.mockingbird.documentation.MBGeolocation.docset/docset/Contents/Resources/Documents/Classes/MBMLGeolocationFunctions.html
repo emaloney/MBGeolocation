@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MBMLGeolocationFunctions Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MBGeolocation </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gilt Groupe</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/distance:">+ distance:</option>
+		
+		<option value="//api/name/formatDistance:">+ formatDistance:</option>
+		
+		<option value="//api/name/parseLocation:">+ parseLocation:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MBMLGeolocationFunctions Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MBMLGeolocationFunctions.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides a mechanism for parsing geolocations from strings, calculating
+distances between geolocations, and formatting human-readable distances.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/distance:" title="distance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/distance:">+&nbsp;distance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Calculates the distance between two map coordinates, in miles.</p>
+
+<p>This function accepts an array of template expressions, and expects
+two objects in the array: <i>point a</i> and <i>point b</b>, both of which
+are expected to evaluate to <code>MBGeolocation</code> instances or
+<code>NSString</code>s. If either parameter is a string, an attempt is made
+to convert it into an <code>MBGeolocation</code> instance by interpreting it in
+<code><i>latitude</i>,<i>longitude</i></code> format.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id)distance:(NSArray *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>an array containing the input parameters for the function</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <code>NSNumber</code> instance containing a <code>double</code>
+            value representing the distance in miles between the input
+            parameters</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><b>Template example:</b></p>
+
+<pre>^distance($pointA|$pointB)</pre>
+
+
+<p>The expression above returns the distance in miles between <code>$pointA</code>
+and <code>$pointB</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBMLGeolocationFunctions.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/formatDistance:" title="formatDistance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/formatDistance:">+&nbsp;formatDistance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Calculates the distance between two map coordinates, in miles, and formats
+a string to represent that distance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id)formatDistance:(NSArray *)<em>params</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>an array containing the input parameters for the function</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <code>NSString</code> formatted according to the parameters</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function accepts an array of template expressions, and expects
+three objects in the array:</p>
+
+<ul>
+<li>a <i>format string</i>
+
+<li><i>point a</i> and <i>point b</b>, both of which
+are expected to evaluate to <code>MBGeolocation</code> instances or
+<code>NSString</code>s. If either point is a string, an attempt is made
+to convert it into an <code>MBGeolocation</code> instance by interpreting it in
+<code><i>latitude</i>,<i>longitude</i></code> format.
+</ul>
+
+
+<p><b>Template example:</b></p>
+
+<pre>^formatDistance(%0.1f miles|$pointA|$pointB)</pre>
+
+
+<p>The expression above would determine the miles between <code>$pointA</code>
+and <code>$pointB</code>, and would then format that value into a string
+using <code>[NSString stringWithFormat:@&ldquo;%0.1f miles&rdquo;, distanceInMiles]</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBMLGeolocationFunctions.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/parseLocation:" title="parseLocation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/parseLocation:">+&nbsp;parseLocation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Attempts to create an <code>MBGeolocation</code> instance by parsing a string
+for decimal latitude and longitude coordinates.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id)parseLocation:(NSString *)<em>locStr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>string containing comma-separated or pipe-separated latitude and
+            longitude coordinates</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <code>MBGeolocation</code> containing the latitude and longitude
+            specified in the input parameter</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function accepts a string as input, where the string contains the
+latitude coordinate, followed by a delimiter, followed by the longitude
+coordinate.</p>
+
+<p>This method accepts either a comma (&ldquo;<code>,</code>&rdquo;) or a pipe character
+(&ldquo;<code>|</code>&rdquo;) as the delimiter, meaning that the following expressions
+are equivalent:</p>
+
+<pre>^parseLocation(40.741284|-73.987383)</pre>
+
+
+<pre>^parseLocation(40.741284,-73.987383)</pre>
+
+
+<p>Either expression above would return an <code>MBGeolocation</code> instance
+pointing to the address 1 Madison Avenue in New York City.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBMLGeolocationFunctions.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Gilt Groupe. All rights reserved. Updated: 2017-04-06</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

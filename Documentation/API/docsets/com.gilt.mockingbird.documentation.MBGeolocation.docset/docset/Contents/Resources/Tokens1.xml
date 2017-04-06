@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MBGeolocationModule.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MBGeolocationModule</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationModule.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

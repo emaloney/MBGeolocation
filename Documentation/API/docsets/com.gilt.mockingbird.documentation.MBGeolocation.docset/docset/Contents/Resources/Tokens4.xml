@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MBMLGeolocationFunctions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MBMLGeolocationFunctions</TokenIdentifier>
+			<Abstract type="html">Provides a mechanism for parsing geolocations from strings, calculating
+distances between geolocations, and formatting human-readable distances.</Abstract>
+			<DeclaredIn>MBMLGeolocationFunctions.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MBMLGeolocationFunctions/distance:</TokenIdentifier>
+			<Abstract type="html">Calculates the distance between two map coordinates, in miles.
+  
+This function accepts an array of template expressions, and expects
+two objects in the array: &lt;i&gt;point a&lt;/i&gt; and &lt;i&gt;point b&lt;/b&gt;, both of which
+are expected to evaluate to &lt;code&gt;MBGeolocation&lt;/code&gt; instances or
+&lt;code&gt;NSString&lt;/code&gt;s. If either parameter is a string, an attempt is made
+to convert it into an &lt;code&gt;MBGeolocation&lt;/code&gt; instance by interpreting it in
+&lt;code&gt;&lt;i&gt;latitude&lt;/i&gt;,&lt;i&gt;longitude&lt;/i&gt;&lt;/code&gt; format.</Abstract>
+			<DeclaredIn>MBMLGeolocationFunctions.h</DeclaredIn>
+			
+			<Declaration>+ (id)distance:(NSArray *)params</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>params</Name>
+					<Abstract type="html">an array containing the input parameters for the function</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An &lt;code&gt;NSNumber&lt;/code&gt; instance containing a &lt;code&gt;double&lt;/code&gt;
+            value representing the distance in miles between the input
+            parameters</Abstract></ReturnValue>
+			<Anchor>//api/name/distance:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MBMLGeolocationFunctions/formatDistance:</TokenIdentifier>
+			<Abstract type="html">Calculates the distance between two map coordinates, in miles, and formats
+a string to represent that distance.</Abstract>
+			<DeclaredIn>MBMLGeolocationFunctions.h</DeclaredIn>
+			
+			<Declaration>+ (id)formatDistance:(NSArray *)params</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>params</Name>
+					<Abstract type="html">an array containing the input parameters for the function</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An &lt;code&gt;NSString&lt;/code&gt; formatted according to the parameters</Abstract></ReturnValue>
+			<Anchor>//api/name/formatDistance:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MBMLGeolocationFunctions/parseLocation:</TokenIdentifier>
+			<Abstract type="html">Attempts to create an &lt;code&gt;MBGeolocation&lt;/code&gt; instance by parsing a string
+for decimal latitude and longitude coordinates.</Abstract>
+			<DeclaredIn>MBMLGeolocationFunctions.h</DeclaredIn>
+			
+			<Declaration>+ (id)parseLocation:(NSString *)locStr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>a</Name>
+					<Abstract type="html">string containing comma-separated or pipe-separated latitude and
+            longitude coordinates</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An &lt;code&gt;MBGeolocation&lt;/code&gt; containing the latitude and longitude
+            specified in the input parameter</Abstract></ReturnValue>
+			<Anchor>//api/name/parseLocation:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

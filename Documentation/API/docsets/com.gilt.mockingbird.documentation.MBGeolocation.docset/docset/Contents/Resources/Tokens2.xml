@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MBGeolocationPoint.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MBGeolocationPoint</TokenIdentifier>
+			<Abstract type="html">Each instance of this class represents a point on Earth.</Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/setCoordinate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			
+			
+			<Anchor>//api/name/coordinate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/coordinate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			
+			
+			<Anchor>//api/name/coordinate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MBGeolocationPoint/coordinate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			
+			
+			<Anchor>//api/name/coordinate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/setLatitude:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDegrees latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/latitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDegrees latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MBGeolocationPoint/latitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDegrees latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/setLongitude:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDegrees longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/longitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDegrees longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MBGeolocationPoint/longitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDegrees longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MBGeolocationPoint/pointWithLatitude:longitude:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>+ (nonnull instancetype)pointWithLatitude:(nonnull id)lat longitude:(nonnull id)lng</Declaration>
+			
+			
+			<Anchor>//api/name/pointWithLatitude:longitude:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MBGeolocationPoint/pointWithCoordinate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>+ (nonnull instancetype)pointWithCoordinate:(CLLocationCoordinate2D)coord</Declaration>
+			
+			
+			<Anchor>//api/name/pointWithCoordinate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MBGeolocationPoint/pointWithString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>+ (nullable instancetype)pointWithString:(nonnull NSString *)location</Declaration>
+			
+			
+			<Anchor>//api/name/pointWithString:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/initWithCoordinate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>- (nonnull instancetype)initWithCoordinate:(CLLocationCoordinate2D)coord</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCoordinate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/initWithString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)initWithString:(nonnull NSString *)location</Declaration>
+			
+			
+			<Anchor>//api/name/initWithString:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/distanceFrom:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>- (double)distanceFrom:(nonnull MBGeolocationPoint *)otherLocation</Declaration>
+			
+			
+			<Anchor>//api/name/distanceFrom:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBGeolocationPoint/asString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MBGeolocationPoint.h</DeclaredIn>
+			
+			<Declaration>- (nonnull NSString *)asString</Declaration>
+			
+			
+			<Anchor>//api/name/asString</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

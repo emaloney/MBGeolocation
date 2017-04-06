@@ -463,7 +463,7 @@ fi
 #
 # determine build settings
 #
-PROJECT_SPECIFIER="-project MBGeolocation.xcodeproj"
+PROJECT_SPECIFIER="-workspace MBGeolocation.xcworkspace"
 COMPILE_PLATFORMS="iOS macOS tvOS watchOS"
 PROJECT_NAME="MBGeolocation"
 
