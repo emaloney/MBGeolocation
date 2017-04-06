@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0610"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BB792681A82AB3D00A99387"
+               BlueprintIdentifier = "3B9059021DAECB5200B4EEC0"
                BuildableName = "MBGeolocation.framework"
                BlueprintName = "MBGeolocation"
-               ReferencedContainer = "container:MBGeolocation.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BB792721A82AB3D00A99387"
-               BuildableName = "MBGeolocationTests.xctest"
-               BlueprintName = "MBGeolocationTests"
                ReferencedContainer = "container:MBGeolocation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BB792721A82AB3D00A99387"
-               BuildableName = "MBGeolocationTests.xctest"
-               BlueprintName = "MBGeolocationTests"
+               BlueprintIdentifier = "3B90590B1DAECB5200B4EEC0"
+               BuildableName = "MBGeolocationUnitTests.xctest"
+               BlueprintName = "MBGeolocationUnitTests"
                ReferencedContainer = "container:MBGeolocation.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BB792681A82AB3D00A99387"
+            BlueprintIdentifier = "3B9059021DAECB5200B4EEC0"
             BuildableName = "MBGeolocation.framework"
             BlueprintName = "MBGeolocation"
             ReferencedContainer = "container:MBGeolocation.xcodeproj">
@@ -78,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BB792681A82AB3D00A99387"
+            BlueprintIdentifier = "3B9059021DAECB5200B4EEC0"
             BuildableName = "MBGeolocation.framework"
             BlueprintName = "MBGeolocation"
             ReferencedContainer = "container:MBGeolocation.xcodeproj">
@@ -96,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BB792681A82AB3D00A99387"
+            BlueprintIdentifier = "3B9059021DAECB5200B4EEC0"
             BuildableName = "MBGeolocation.framework"
             BlueprintName = "MBGeolocation"
             ReferencedContainer = "container:MBGeolocation.xcodeproj">
