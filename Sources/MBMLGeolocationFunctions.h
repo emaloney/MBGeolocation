@@ -23,7 +23,7 @@
  Calculates the distance between two map coordinates, in miles.
   
  This function accepts an array of template expressions, and expects
- two objects in the array: <i>point a</i> and <i>point b</b>, both of which
+ two objects in the array: <i>point a</i> and <i>point b</i>, both of which
  are expected to evaluate to <code>MBGeolocation</code> instances or 
  <code>NSString</code>s. If either parameter is a string, an attempt is made
  to convert it into an <code>MBGeolocation</code> instance by interpreting it in 
@@ -54,7 +54,7 @@
  <ul>
  <li>a <i>format string</i>
  
- <li><i>point a</i> and <i>point b</b>, both of which
+ <li><i>point a</i> and <i>point b</i>, both of which
  are expected to evaluate to <code>MBGeolocation</code> instances or 
  <code>NSString</code>s. If either point is a string, an attempt is made
  to convert it into an <code>MBGeolocation</code> instance by interpreting it in 
