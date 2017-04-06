@@ -93,8 +93,8 @@
  Either expression above would return an <code>MBGeolocation</code> instance
  pointing to the address 1 Madison Avenue in New York City.
  
- @param     a string containing comma-separated or pipe-separated latitude and
-            longitude coordinates
+ @param     locStr a string containing comma-separated or pipe-separated
+            latitude and longitude coordinates
  
  @return    An <code>MBGeolocation</code> containing the latitude and longitude
             specified in the input parameter
