@@ -73,9 +73,11 @@ MBImplementSingleton()
     if (!_locationManager) {
         _locationManager = [CLLocationManager new];
         _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+#if MB_BUILD_IOS
         if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
             [_locationManager requestWhenInUseAuthorization];
         }
+#endif
 
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(updateLocation)
@@ -120,8 +122,10 @@ MBImplementSingleton()
     }
     
     _locationManager.delegate = self;
+#if MB_BUILD_IOS
     [_locationManager startUpdatingLocation];
-    
+#endif
+
     [_locationTimeout invalidate];
     _locationTimeout = [NSTimer scheduledTimerWithTimeInterval:kMBGeolocationDetectionTimeout 
                                                         target:self 

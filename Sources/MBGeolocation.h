@@ -16,7 +16,7 @@
 
 #import <MBToolbox/MBToolbox.h>
 
-#if MB_BUILD_IOS
+#if MB_BUILD_UIKIT
 #import <UIKit/UIKit.h>
 #else
 #import <AppKit/AppKit.h>
@@ -34,6 +34,9 @@ FOUNDATION_EXPORT const unsigned char MBGeolocationVersionString[];
 // NOTE: This header file is indended for external use. It should *not* be
 //       included from within code in the Mockingbird Event Handling module.
 //
+
+// import the public headers
+
 #import <MBGeolocation/MBGeolocationPoint.h>
 #import <MBGeolocation/MBGeolocationService.h>
 #import <MBGeolocation/MBMLGeolocationFunctions.h>
