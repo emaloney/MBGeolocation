@@ -43,10 +43,10 @@ Then, use the `carthage` command to [update your dependencies](https://github.co
 
 Finally, you’ll need to [integrate MBGeolocation into your project](https://github.com/emaloney/MBGeolocation/blob/master/INTEGRATION.md) in order to use [the API](https://rawgit.com/emaloney/MBGeolocation/master/Documentation/API/index.html) it provides.
 
-Once successfully integrated, just add the following `import` statement to any Swift file where you want to use MBGeolocation:
+Once successfully integrated, just add the following statement to any Objective-C file where you want to use MBGeolocation:
 
-```swift
-import MBGeolocation
+```objc
+@import MBGeolocation;
 ```
 
 See [the Integration document](https://github.com/emaloney/MBGeolocation/blob/master/INTEGRATION.md) for additional details on integrating MBGeolocation into your project.
