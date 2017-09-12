@@ -98,7 +98,8 @@ MBImplementSingleton()
         [_locationManager stopUpdatingLocation];
         _locationManager = nil;
         
-        [_locationTimeout invalidate], _locationTimeout = nil;
+        [_locationTimeout invalidate];
+        _locationTimeout = nil;
     }
 }
 
@@ -186,7 +187,8 @@ MBImplementSingleton()
     
     MBLogError(@"Failed to determine location: %@", error);
 
-    [_locationTimeout invalidate], _locationTimeout = nil;
+    [_locationTimeout invalidate];
+    _locationTimeout = nil;
     
     [_locationManager stopUpdatingLocation];
     _locationManager.delegate = nil;
@@ -204,7 +206,8 @@ MBImplementSingleton()
         [_locationManager stopUpdatingLocation];
         _locationManager.delegate = nil;
         
-        [_locationTimeout invalidate], _locationTimeout = nil;
+        [_locationTimeout invalidate];
+        _locationTimeout = nil;
     }
 }
 
